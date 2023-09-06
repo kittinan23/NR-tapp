@@ -191,7 +191,7 @@ export class appealService {
     ชื่อผู้แจ้ง : ${user.prefix + ' ' + user.name + ' ' + user.lastname}
     โทร : ${user.telephone} 
     ที่อยู่ : ${"บ้านเลขที่" + user.housenumber + ' ' + "ม." + user.group + ' ' + "ซอย" + user.alley + ' ' + "ถนน" + user.road + ' ' + "ตำบล" + user.sub_district + ' ' + "อำเภอ" + user.district + ' ' + "จังหวัด" + user.province}
-    รบกวนตรวจสอบที่ระบบ : https://dashboard-smartcity.netlify.app/login.html` ,
+    รบกวนตรวจสอบที่ระบบ : https://nr-smartcity-dashboard.netlify.app/login.html` ,
     });
     const config = {
       method: 'post',
@@ -220,7 +220,7 @@ export class appealService {
     วันที่/เวลา : ${"วันที่ " + day + ' ' + month + ' ' + year + ' ' + "เวลา : " + time + " น."}
     โทร : ${user.telephone} 
     ที่อยู่ : ${"บ้านเลขที่" + user.housenumber + ' ' + "ม." + user.group + ' ' + "ซอย" + user.alley + ' ' + "ถนน" + user.road + ' ' + "ตำบล" + user.sub_district + ' ' + "อำเภอ" + user.district + ' ' + "จังหวัด" + user.province}
-    รบกวนตรวจสอบที่ระบบ : https://dashboard-smartcity.netlify.app/login.html` ,
+    รบกวนตรวจสอบที่ระบบ : https://nr-smartcity-dashboard.netlify.app/login.html` ,
     });
     const config = {
       method: 'post',
@@ -642,7 +642,7 @@ export class appealService {
     var url = "https://api.line.me/v2/bot/profile/" + uid
     var userData_line = await (await axios.get(url, {
       headers: {
-        Authorization: 'Bearer H8DjmiQAq/KRP2gr781HZkwnAgmS0K+obaojuibbHiu4SrCFw7EBEiKOzm04RD7YC/zzFPzlW6qyfokrqpYmi1jR1oA5ZO2hamLDcKvTYFsUzYyZTmL/EJlpE/t0xIruQkz1yEpHkxC2BOeGMJ0yXwdB04t89/1O/w1cDnyilFU='
+        Authorization: 'Bearer Wtk1WxYxsr35LWFidG7buMdIGgoxvlVy3EoGHhUC+hT/53pNYVvCVGGmKH9JW0Y+PsNl0nqpP0OhNriqicCzPyCg7bV2Mu2H8QMWmslHjj6MSBCQJ58fdD2TGME1EPlFu9dm2TZ28BWyP16WCb59/AdB04t89/1O/w1cDnyilFU='
       }
     })).data
     return userData_line
