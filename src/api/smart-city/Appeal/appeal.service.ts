@@ -387,7 +387,7 @@ export class appealService {
                   "action": {
                     "type": "uri",
                     "label": "ดูรายละเอียด",
-                    "uri": "https://tapp-smartcity.netlify.app/compailn/check_details?_id=${body._id}&key=${Number(body.total)}"
+                    "uri": "https://nr-smartcity-all.netlify.app/compailn/check_details?_id=${body._id}&key=${Number(body.total)}"
                   },
                   "color": "#8CBCF5FF",
                   "height": "sm",
