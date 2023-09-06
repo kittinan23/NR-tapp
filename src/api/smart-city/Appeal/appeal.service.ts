@@ -276,7 +276,7 @@ export class appealService {
       method: 'post',
       url: "https://api.line.me/v2/bot/message/push",
       headers: {
-        Authorization: "Bearer H8DjmiQAq/KRP2gr781HZkwnAgmS0K+obaojuibbHiu4SrCFw7EBEiKOzm04RD7YC/zzFPzlW6qyfokrqpYmi1jR1oA5ZO2hamLDcKvTYFsUzYyZTmL/EJlpE/t0xIruQkz1yEpHkxC2BOeGMJ0yXwdB04t89/1O/w1cDnyilFU=",
+        Authorization: "Bearer Wtk1WxYxsr35LWFidG7buMdIGgoxvlVy3EoGHhUC+hT/53pNYVvCVGGmKH9JW0Y+PsNl0nqpP0OhNriqicCzPyCg7bV2Mu2H8QMWmslHjj6MSBCQJ58fdD2TGME1EPlFu9dm2TZ28BWyP16WCb59/AdB04t89/1O/w1cDnyilFU=",
         'Content-Type': 'application/json',
       },
       data: raw,
@@ -403,7 +403,7 @@ export class appealService {
       method: 'post',
       url: "https://api.line.me/v2/bot/message/push",
       headers: {
-        Authorization: "Bearer H8DjmiQAq/KRP2gr781HZkwnAgmS0K+obaojuibbHiu4SrCFw7EBEiKOzm04RD7YC/zzFPzlW6qyfokrqpYmi1jR1oA5ZO2hamLDcKvTYFsUzYyZTmL/EJlpE/t0xIruQkz1yEpHkxC2BOeGMJ0yXwdB04t89/1O/w1cDnyilFU=",
+        Authorization: "Bearer Wtk1WxYxsr35LWFidG7buMdIGgoxvlVy3EoGHhUC+hT/53pNYVvCVGGmKH9JW0Y+PsNl0nqpP0OhNriqicCzPyCg7bV2Mu2H8QMWmslHjj6MSBCQJ58fdD2TGME1EPlFu9dm2TZ28BWyP16WCb59/AdB04t89/1O/w1cDnyilFU=",
         'Content-Type': 'application/json',
       },
       data: raw,
