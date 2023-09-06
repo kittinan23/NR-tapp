@@ -102,6 +102,7 @@ export class adminService {
         updated: body.updated = timezone,
         name:body.name,
         userid: body.userid ,
+        level: body.level,
         password:hashpassword 
       }
       dataSave = await this.AdminSmartModel.create(data);

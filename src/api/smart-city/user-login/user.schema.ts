@@ -23,6 +23,9 @@ export class AdminSmartCity {
   userid: string;
 
   @Prop()
+  level: string;
+
+  @Prop()
   password: string;
 
 }

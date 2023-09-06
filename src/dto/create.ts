@@ -197,6 +197,7 @@ export class CreateAdminSmart {
     updated: string;
     name: string;
     userid: string;
+    level: string;
     password: string;
 }
 export class CreateUserDto {

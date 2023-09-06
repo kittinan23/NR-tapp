@@ -57,6 +57,7 @@ export class IAdminSmart {
     updated: string;
     name: string;
     userid: string;
+    level: string;
     password: string;
 }
 
