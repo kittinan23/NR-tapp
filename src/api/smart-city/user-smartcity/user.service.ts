@@ -67,11 +67,14 @@ export class userSmartService {
     return await this.UserSmartModel.findOneAndDelete({ _id: id })
   }
 
-  async getMemberAll(): Promise<UserSmartCity[]> {
-    return this.UserSmartModel.find().exec();
-    //return this.catModel.find({firstname:/tiph/}).exec();
-  }
-
+  // async getMemberAll(): Promise<UserSmartCity[]> {
+  //   return this.UserSmartModel.find().exec();
+  //   //return this.catModel.find({firstname:/tiph/}).exec();
+  // }
+  async getMemberCount(): Promise<number> {
+    const members = await this.UserSmartModel.find().exec();
+    return members.length;
+}
 
 
   async getUserbyid(id: String): Promise<UserSmartCity[]> {

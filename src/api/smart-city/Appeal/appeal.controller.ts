@@ -4,6 +4,7 @@ import { UpdateAppeal } from 'src/dto/update';
 import { appealsmart } from './appeal.schema';
 import { appealService } from './appeal.service';
 import { DocumentDefinition } from 'mongoose';
+import axios from 'axios';
 @Controller('appeal')
 export class AppealController {
 
@@ -21,6 +22,11 @@ export class AppealController {
   async getapp(@Param('status') status: string): Promise<DocumentDefinition<any>[]> {
     return this.appealService.getApp(status);
   }
+
+  // @Get('app/:role')
+  // async getrole(@Param('role') role: string): Promise<DocumentDefinition<any>[]> {
+  //   return this.appealService.getrole(role);
+  // }
 
   @Get('find/data')
   async finddata(@Query('userID') userID: string) {
@@ -91,3 +97,32 @@ export class AppealController {
     return this.appealService.getAppeal({ id: String(id) });
   }
 }
+  // @Get('/check/:speed')
+  // async checkSpeed() {
+  //   const speed = 70; // ความเร็วปัจจุบันของรถ (เปลี่ยนตามสถานการณ์)
+
+  //   if (speed > 60) {
+  //     await this.sendLineNotify('รถวิ่งเกิน 60 km/h');
+  //   }
+
+  //   if (speed > 80) {
+  //     await this.sendLineNotify('รถวิ่งเกิน 80 km/h');
+  //   }
+
+  //   return 'ตรวจสอบความเร็วเสร็จสิ้น';
+  // }
+  // async sendLineNotify(message: string) {
+  //   const lineNotifyToken = '5TSF0TOZbHTuyL7173iVTt0WscFYwdvv8qclTm95S1W'; 
+  
+  //   await axios.post(
+  //     'https://notify-api.line.me/api/notify',
+  //     `message=${message}`,
+  //     {
+  //       headers: {
+  //         'Content-Type': 'application/x-www-form-urlencoded',
+  //         'Authorization': `Bearer ${lineNotifyToken}`,
+  //       },
+  //     }
+  //   );
+  // }
+

@@ -45,6 +45,16 @@ export class appealService {
     return this.appealModel.find().exec();
   }
 
+  // async getMemberAll(): Promise<AdminSmartCity[]> {
+  //   const adminSmartData = await this.adminSmartModel.find().exec();
+
+  //   // const otherTableData = await this.otherTableModel.find().exec();
+  //   // const combinedData = [...adminSmartData, ...otherTableData];
+
+  //   return adminSmartData; // หรือ combinedData ถ้าคุณรวมข้อมูลจากตารางอื่นๆ ด้วย
+  // }
+
+
   async getApp(status: string): Promise<DocumentDefinition<any>[]> {
     const statusText = {
       1: "รอตรวจสอบ",
@@ -80,7 +90,38 @@ export class appealService {
     return apps
 
   }
-  //git1150
+
+//   async getrole(role: string): Promise<DocumentDefinition<any>[]> {
+//   const roles = {
+//     user: "user", // หากต้องการเพิ่มหน้าที่อื่น ๆ ให้เพิ่มเติมตามต้องการ
+//     admin: "admin",
+//     // admin_end: "เสร็จสิ้น",
+//   }[role]
+
+//   const apps = await this.appealModel.find({ [role]: true }).lean().exec()
+
+//   const users = await Promise.all(
+//     apps.map(async app => {
+//       const userData = await this.UserSmartModel.findOne({ userID: app.userID }).lean().exec()
+//       return userData
+//     })
+//   )
+
+//   const admins = await Promise.all(
+//     apps.map(async app => {
+//       const adminData = await this.AdminSmartModel.findOne({ _id: app[role] }).lean().exec()
+//       return adminData
+//     })
+//   )
+
+//   apps.forEach((app, i) => {
+//     app.fullname = users[i]['prefix'] + users[i]['name'] + " " + users[i]['lastname']
+//     app.adminData = admins[i]
+//   })
+
+//   return apps
+// }
+
   async finddata(query: searchUser): Promise<any> {
 
     var comd: Object = new Object();

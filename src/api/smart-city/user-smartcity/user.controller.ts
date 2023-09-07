@@ -20,9 +20,10 @@ export class userSmartController {
   ) { }
 
   @Get('userAll')
-  async getdata(): Promise<UserSmartCity[]> {
-    return this.usersmartService.getMemberAll();
-  }
+async getdata(): Promise<number> {
+  const userCount = await this.usersmartService.getMemberCount();
+  return userCount;
+}
 
   @Get(':img')
   async getImg(@Param('img') img: string, @Res() response: Response) {
