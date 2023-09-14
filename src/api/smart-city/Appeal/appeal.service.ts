@@ -357,11 +357,11 @@ export class appealService {
               "contents": [
                 {
                   "type": "image",
-                  "url": "https://www.img.in.th/images/01af7b75edf0446a9e5f1a74ee7927cd.jpg"
+                  "url": "https://drive.google.com/file/d/1R2dT8gZLhnqKt9e7M_33WDHWDWqp_sSo/view?usp=sharing"
                 },
                 {
                   "type": "text",
-                  "text": "เทศบาลเมืองปากพูน",
+                  "text": "องค์การบริหารส่วนตำบลนาเรียง",
                   "weight": "bold",
                   "align": "center",
                   "offsetTop": "20px",
